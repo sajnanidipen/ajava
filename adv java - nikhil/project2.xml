@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="projects2.xsl"?>
+<college>
+<student>
+<id>1</id>
+<name>jyoti</name>
+<course>cs</course>
+<class>fy</class>
+<roll>4</roll>
+</student>
+<student>
+<id>2</id>
+<name>priya</name>
+<course>pcm</course>
+<class>fy</class>
+<roll>89</roll>
+</student>
+<student>
+<id>3</id>
+<name>pri</name>
+<course>commerce</course>
+<class>fy</class>
+<roll>8</roll>
+</student>
+</college>

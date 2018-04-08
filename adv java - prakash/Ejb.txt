@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="output.jsp">
+                Enter name: <input type="text" name="name"/>
+                Enter name: <input type="text" name="name1"/>
+                </br><button>Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+ejb
+package eJB;
+
+public class ejb {
+    String name;
+    String name1;
+public ejb(){
+    name="";
+    name1="";
+}
+public void setName(String n){
+    name=n;
+
+}
+public void setname1(String f){
+   
+    name1=f;
+}
+public String getName(){
+    return name;
+}
+public String getname1(){
+    return name1;
+}
+
+}
+jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <jsp:useBean id="one" class="eJB.ejb" scope="session"/>
+        <jsp:setProperty name="one" property="*"/>
+        hello <jsp:getProperty name="one" property="name"/>
+        Bye <jsp:getProperty name="one" property="name1"/>
+    </body>
+</html>

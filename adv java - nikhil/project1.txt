@@ -1,0 +1,17 @@
+<xml version="0.1">
+<college>
+<student>
+<id> 2 </id>
+<name> jyoti </name>
+<course> cs </course>
+<class> fy </class>
+<roll> 4 </roll>
+</student>
+<student>
+<id> 3 </id>
+<name> priya </name>
+<course> pcm </course>
+<class> fy </class>
+<roll>  89 </roll>
+</student>
+</college>
